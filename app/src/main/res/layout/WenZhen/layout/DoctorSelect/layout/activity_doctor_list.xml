@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_doctor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.needletherapy.Main.FindDoctor.FindDoctor">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/title_layout">
+        <ImageView
+            android:id="@+id/back"
+            style="@style/title_layout_back"/>
+
+        <TextView
+            style="@style/title_layout_title"
+            android:text="医生" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sort_layout"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="附近" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/upanddowntrue"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#aa000000" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="评分"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/upanddowntrue"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#aa000000" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:lines="1"
+            android:text="服务数"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/upanddowntrue"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#aa000000" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="价格"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/upanddowntrue"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sort_layout">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

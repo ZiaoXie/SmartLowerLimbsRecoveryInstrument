@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_doctor_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.needletherapy.WenZhen.DoctorSelect.DoctorSelect">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        style="@style/title_layout">
+        <ImageView
+            android:id="@+id/back"
+            style="@style/title_layout_back"/>
+
+        <TextView
+            style="@style/title_layout_title"
+            android:text="医生选择" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

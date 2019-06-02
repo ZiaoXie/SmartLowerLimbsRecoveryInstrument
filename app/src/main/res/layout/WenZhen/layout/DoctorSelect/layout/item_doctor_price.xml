@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/doctorpic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/doctor"/>
+        <TextView
+            android:id="@+id/doctorname"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/doctorpic"
+            android:layout_toRightOf="@+id/doctorpic"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="王医师"/>
+        <TextView
+            android:id="@+id/doctorclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/doctorname"
+            android:layout_alignBottom="@+id/doctorname"
+            android:layout_marginLeft="20dp"
+            android:text="主任医师"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/doctorabstract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctorname"
+            android:layout_below="@+id/doctorname"
+            android:layout_marginTop="5dp"
+            android:lines="2"
+            android:textSize="15dp"
+            android:text="2001年毕业于南京中医药大学，拥有十年的针灸从医经验"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/doctorname">
+
+            <TextView
+                android:id="@+id/jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格:"
+                android:textColor="#ff0000"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30.00元/次"
+                android:textColor="#ff0000"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/jiage"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/pingfen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评分:"
+                android:textColor="#ff0000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/doctorscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="5.0"
+                android:textColor="#ff0000"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/pingfen"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

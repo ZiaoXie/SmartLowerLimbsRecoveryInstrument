@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.smartlowerlimbsrecoveryinstrument"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layout/listitem',
+                            'src/main/res/layout/recommend',
+                            'src/main/res/layout/YangSheng',
+                            'src/main/res/layout/ZhongYiTiZhi',
+                            'src/main/res/layout/forum',
+                            'src/main/res/layout/personal',
+                            'src/main/res/layout/Recovery',
+                            'src/main/res',
+
+                            'src/main/res/layout/WenZhen',
+                            'src/main/res/layout/WenZhen/layout/DoctorSelect',
+                            'src/main/res/layout/WenZhen/layout/WenZhenAction',
+                            'src/main/res/layout/WenZhen/layout/WenZhenAction/layout/PostOnline'
+                    ]
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile files('src/main/libs/gson-2.8.0.jar')
+    compile files('src/main/libs/simpleUMLCE_8205.jar')
+
+    //    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'me.gujun.android.taggroup:library:1.4@aar'
+    compile 'com.amap.api:map2d:latest.integration'
+    compile 'com.amap.api:search:latest.integration'
+    compile 'com.amap.api:navi-3dmap:latest.integration'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.zaaach:citypicker:1.1'
+    compile 'com.hyman:flowlayout-lib:1.1.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    testCompile 'junit:junit:4.12'
+}
